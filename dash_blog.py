@@ -188,7 +188,7 @@ def mapper_2D():
     df['GEOID'] = df['GEOID'].astype(str)
 
     # read in geospatial
-    gdf = gpd.read_file('Geography/Forsyth_CTs.gpkg')
+    gdf = gpd.read_file('Forsyth_CTs.gpkg')
 
     # join together the 2, and let not man put asunder
     joined_df = gdf.merge(df, left_on='GEOID', right_on='GEOID')
