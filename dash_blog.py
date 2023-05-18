@@ -475,13 +475,13 @@ col3.plotly_chart(charter(), use_container_width=True, config = {'displayModeBar
 #     subcol4.write("Powered by")
 #     subcol5.image(im, width=80)
 
-# put expander explanatory text
-if map_view == '2D':
-    with col1:
-        expander = st.expander("Notes")
-        expander.markdown("<span style='color:#022B3A'> Darker shades of Census tracts represent higher sales prices per SF for the selected time period. Dashboard excludes non-qualified, non-market, and bulk transactions. Excludes transactions below $1,000 and homes smaller than 75 square feet. Data downloaded from Forsyth County public records on May 11, 2023.</span>", unsafe_allow_html=True)
-else:
-    with col1:
-        col1.markdown("<span style='color:#022B3A'><b>Shift + click</b> to rotate and change map angle in 3D view. Census tract 'height' represents the total sales.</span>", unsafe_allow_html=True)
-        expander = st.expander("Notes")
-        expander.markdown("<span style='color:#022B3A'>Census tract 'height' representative of total sales per tract. Darker shades of Census tracts represent higher sales prices per SF for the selected time period. Dashboard excludes non-qualified, non-market, and bulk transactions. Excludes transactions below $1,000 and homes smaller than 75 square feet. Data downloaded from Forsyth County public records on May 11, 2023.</span>", unsafe_allow_html=True)
+# # put expander explanatory text
+# if map_view == '2D':
+#     with col1:
+#         expander = st.expander("Notes")
+#         expander.markdown("<span style='color:#022B3A'> Darker shades of Census tracts represent higher sales prices per SF for the selected time period. Dashboard excludes non-qualified, non-market, and bulk transactions. Excludes transactions below $1,000 and homes smaller than 75 square feet. Data downloaded from Forsyth County public records on May 11, 2023.</span>", unsafe_allow_html=True)
+# else:
+#     with col1:
+#         col1.markdown("<span style='color:#022B3A'><b>Shift + click</b> to rotate and change map angle in 3D view. Census tract 'height' represents the total sales.</span>", unsafe_allow_html=True)
+#         expander = st.expander("Notes")
+#         expander.markdown("<span style='color:#022B3A'>Census tract 'height' representative of total sales per tract. Darker shades of Census tracts represent higher sales prices per SF for the selected time period. Dashboard excludes non-qualified, non-market, and bulk transactions. Excludes transactions below $1,000 and homes smaller than 75 square feet. Data downloaded from Forsyth County public records on May 11, 2023.</span>", unsafe_allow_html=True)
