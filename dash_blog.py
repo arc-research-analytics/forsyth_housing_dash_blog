@@ -245,6 +245,7 @@ def mapper_2D():
                       "border": "1px solid white", 
                       "color": "white", 
                       "font-family": "Helvetica", 
+                      "font-size": "12px",
                       "text-align": "center"
                       },
             }
@@ -439,10 +440,10 @@ med_vintage = '{:.0f}'.format(filter_data()[2]['year_blt'].median())
 med_SF = '{:,.0f}'.format(filter_data()[2]['Square Ft'].median())
 
 # kpi styles
-label_font_size = 14 
+label_font_size = 12 
 label_font_color = '022B3A'
 
-value_font_size = 26
+value_font_size = 22
 value_font_color = '022B3A'
 value_font_weight = '650' # thickness of the bold
 
