@@ -468,12 +468,12 @@ with col3:
 # line chart
 col3.plotly_chart(charter(), use_container_width=True, config = {'displayModeBar': False}, help='test')
 
-# arc logo
-im = Image.open('logo.png')
-with col3:
-    subcol1, subcol2, subcol3, subcol4, subcol5 = st.columns([1, 1, 1, 1, 1])
-    subcol4.write("Powered by")
-    subcol5.image(im, width=80)
+# # arc logo
+# im = Image.open('logo.png')
+# with col3:
+#     subcol1, subcol2, subcol3, subcol4, subcol5 = st.columns([1, 1, 1, 1, 1])
+#     subcol4.write("Powered by")
+#     subcol5.image(im, width=80)
 
 # put expander explanatory text
 if map_view == '2D':
