@@ -396,7 +396,7 @@ def charter():
             tickformat = '%b %Y',
             dtick = 'M3'
             ),
-        height=460,
+        height=465,
         hovermode="x unified")
 
     # add shifting vertical lines
