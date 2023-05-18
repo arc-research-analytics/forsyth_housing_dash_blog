@@ -215,13 +215,13 @@ def mapper_2D():
     # create map intitial state
     initial_view_state = pdk.ViewState(
         latitude=34.207054643497315,
-        longitude=-84.10535919531371, 
-        zoom=9.2, 
+        longitude=-83.90535919531371, 
+        zoom=8.8, 
         max_zoom=15, 
         min_zoom=8,
         pitch=0,
         bearing=0,
-        height=565
+        height=500
         )
     
     geojson = pdk.Layer(
