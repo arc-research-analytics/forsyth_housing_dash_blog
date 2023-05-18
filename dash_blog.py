@@ -215,7 +215,7 @@ def mapper_2D():
     # create map intitial state
     initial_view_state = pdk.ViewState(
         latitude=34.207054643497315,
-        longitude=-83.90535919531371, 
+        longitude=-83.99535919531371, 
         zoom=8.8, 
         max_zoom=15, 
         min_zoom=8,
