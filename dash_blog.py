@@ -114,7 +114,7 @@ base_map_dict = {
 @st.cache_data
 def load_tab_data():
     # load the data
-    df = pd.read_csv('../forsyth_housing_dashboard_v2/Geocoded_Final_Joined4.csv', thousands=',', keep_default_na=False)
+    df = pd.read_csv('Geocoded_Final_Joined4.csv', thousands=',', keep_default_na=False)
     df['Sale Price'] = df['Sale Price'].str.replace('[\$,]','',regex=True).str.replace(',','',regex=True)
 
     df = df[[
@@ -188,7 +188,7 @@ def mapper_2D():
     df['GEOID'] = df['GEOID'].astype(str)
 
     # read in geospatial
-    gdf = gpd.read_file('../forsyth_housing_dashboard_v2/Geography/Forsyth_CTs.gpkg')
+    gdf = gpd.read_file('Geography/Forsyth_CTs.gpkg')
 
     # join together the 2, and let not man put asunder
     joined_df = gdf.merge(df, left_on='GEOID', right_on='GEOID')
@@ -468,7 +468,7 @@ with col3:
 col3.plotly_chart(charter(), use_container_width=True, config = {'displayModeBar': False}, help='test')
 
 # arc logo
-im = Image.open('../forsyth_housing_dashboard_v2/content/logo.png')
+im = Image.open('logo.png')
 with col3:
     subcol1, subcol2, subcol3, subcol4, subcol5 = st.columns([1, 1, 1, 1, 1])
     subcol4.write("Powered by")
