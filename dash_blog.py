@@ -371,7 +371,7 @@ def charter():
 
     # update the fig
     fig.update_layout(
-        title_text='<span style="font-size: 20px;">Median Sales Price / SF</span><br><span style="font-size: 14px;">Orange lines reflect selected years of 2021-2023.</span>', 
+        title_text='<span style="font-size: 20px;">Median Sales Price / SF</span>', 
         title_x=0, 
         title_y=0.93,
         title_font_color="#022B3A",
@@ -394,7 +394,8 @@ def charter():
             tickangle=90,
             tickfont_size = 13,
             tickformat = '%b %Y',
-            dtick = 'M3'
+            dtick = 'M3',
+            range=['2021-1','2023-4']
             ),
         height=465,
         hovermode="x unified")
@@ -418,8 +419,8 @@ def charter():
         2023:'2023-4'
     }
 
-    fig.add_vline(x=year_start[years[0]], line_width=2, line_dash="dash", line_color="#FF8966")
-    fig.add_vline(x=year_end[years[1]], line_width=2, line_dash="dash", line_color="#FF8966")
+    # fig.add_vline(x=year_start[years[0]], line_width=2, line_dash="dash", line_color="#FF8966")
+    # fig.add_vline(x=year_end[years[1]], line_width=2, line_dash="dash", line_color="#FF8966")
 
     return fig
 
