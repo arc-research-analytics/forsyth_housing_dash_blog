@@ -382,7 +382,7 @@ def charter():
             linecolor = "#022B3A",
             title = None,
             tickfont_color = '#022B3A',
-            tickfont_size = 16,
+            tickfont_size = 14,
             tickformat = '$.0f',
             showgrid = False
             ),
