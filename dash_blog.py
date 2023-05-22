@@ -397,7 +397,7 @@ def charter():
             dtick = 'M3',
             range=['2021-1','2023-4']
             ),
-        height=465,
+        height=450,
         hovermode="x unified")
 
     # add shifting vertical lines
@@ -425,7 +425,7 @@ def charter():
     return fig
 
 # define columns
-col1, col2, col3 = st.columns([2.8,0.1,3.7])
+col1, col2, col3 = st.columns([3,0.1,3.7])
 
 
 if map_view == '2D':
