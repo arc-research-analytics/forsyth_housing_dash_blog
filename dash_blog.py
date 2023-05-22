@@ -397,7 +397,7 @@ def charter():
             dtick = 'M3',
             range=['2021-1','2023-4']
             ),
-        height=450,
+        height=400,
         hovermode="x unified")
 
     # add shifting vertical lines
@@ -441,10 +441,10 @@ med_vintage = '{:.0f}'.format(filter_data()[2]['year_blt'].median())
 med_SF = '{:,.0f}'.format(filter_data()[2]['Square Ft'].median())
 
 # kpi styles
-label_font_size = 13
+label_font_size = 14
 label_font_color = '022B3A'
 
-value_font_size = 22
+value_font_size = 24
 value_font_color = '022B3A'
 value_font_weight = '650' # thickness of the bold
 
