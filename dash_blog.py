@@ -452,7 +452,7 @@ line_height = 25 # vertical spacing between the KPI label and value
 
 # KPI tyme
 with col3:
-    subcol1, subcol2, subcol3, subcol4 = st.columns([1, 1, 1, 1])
+    subcol1, subcol2 = st.columns([1, 1])
 
     # first metric - "Total sales"
     subcol1.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Total home sales</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{total_sales}</span>", unsafe_allow_html=True)
@@ -461,10 +461,10 @@ with col3:
     subcol1.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median sale price</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{median_price}</span>", unsafe_allow_html=True)
 
     # third metric - "Median SF"
-    subcol3.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median size (SF)</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_SF}</span>", unsafe_allow_html=True)
+    subcol2.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median size (SF)</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_SF}</span>", unsafe_allow_html=True)
 
     # fourth metric - "Median vintage"
-    subcol3.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median vintage</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_vintage}</span>", unsafe_allow_html=True)
+    subcol2.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median vintage</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_vintage}</span>", unsafe_allow_html=True)
 
 # line chart
 col3.plotly_chart(charter(), use_container_width=True, config = {'displayModeBar': False}, help='test')
