@@ -345,6 +345,7 @@ def charter():
 
     df_grouped = df.groupby('year-month').agg({
         'price_sf':'median',
+        'unique_ID':'count',
         'month':pd.Series.mode,
         'year':pd.Series.mode,
         }).reset_index()
@@ -357,16 +358,18 @@ def charter():
         df_grouped, 
         x="year-month",
         y=df_grouped['price_sf'],
-        # color='Sub_geo',
-        labels={
-            'year-month':'Time Period'
-            })
+        custom_data=['unique_ID']
+            )
       
     # modify the line itself
     fig.update_traces(
         mode="lines",
         line_color='#022B3A',
-        hovertemplate=None
+        hovertemplate="<br>".join([
+            "<b>%{x}</b><br>",
+            "Price per SF: <b>%{y}</b>",
+            "Total sales: <b>%{customdata[0]:,.0f}</b>"
+            ])
         )
 
     # update the fig
