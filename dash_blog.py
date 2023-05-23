@@ -374,7 +374,7 @@ def charter():
         title_text='<span style="font-size: 18px;">Monthly Median Sales Price / SF</span>', 
         title_x=0, 
         title_y=0.88,
-        title_font_color="#022B3A",
+        title_font_color="#FFFFFF",
         margin=dict(
             t=85
         ),
@@ -442,11 +442,12 @@ med_SF = '{:,.0f}'.format(filter_data()[2]['Square Ft'].median())
 
 # kpi styles
 label_font_size = 15
-label_font_color = '022B3A'
+label_font_color = '#FFFFFF'
+label_font_weight = '700' # thickness of the bold
 
 value_font_size = 24
-value_font_color = '022B3A'
-value_font_weight = '650' # thickness of the bold
+value_font_color = '#022B3A'
+value_font_weight = '800' # thickness of the bold
 
 line_height = 25 # vertical spacing between the KPI label and value
 
@@ -455,16 +456,16 @@ with col3:
     subcol1, subcol2 = st.columns([1, 1])
 
     # first metric - "Total sales"
-    subcol1.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Total home sales</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{total_sales}</span>", unsafe_allow_html=True)
+    subcol1.markdown(f"<span style='color:{label_font_color}; font-size:{label_font_size}px; font-weight:{label_font_weight}; '>Total home sales</span><br><span style='color:{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{total_sales}</span>", unsafe_allow_html=True)
     
     # second metric - "Median price"
-    subcol1.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median sale price</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{median_price}</span>", unsafe_allow_html=True)
+    subcol1.markdown(f"<span style='color:{label_font_color}; font-size:{label_font_size}px; font-weight:{label_font_weight}; '>Median sale price</span><br><span style='color:{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{median_price}</span>", unsafe_allow_html=True)
 
     # third metric - "Median SF"
-    subcol2.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median size (SF)</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_SF}</span>", unsafe_allow_html=True)
+    subcol2.markdown(f"<span style='color:{label_font_color}; font-size:{label_font_size}px; font-weight:{label_font_weight}; '>Median size (SF)</span><br><span style='color:{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_SF}</span>", unsafe_allow_html=True)
 
     # fourth metric - "Median vintage"
-    subcol2.markdown(f"<span style='color:#{label_font_color}; font-size:{label_font_size}px; '>Median vintage</span><br><span style='color:#{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_vintage}</span>", unsafe_allow_html=True)
+    subcol2.markdown(f"<span style='color:{label_font_color}; font-size:{label_font_size}px; font-weight:{label_font_weight}; '>Median vintage</span><br><span style='color:{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_vintage}</span>", unsafe_allow_html=True)
 
 # line chart
 col3.plotly_chart(charter(), use_container_width=True, config = {'displayModeBar': False}, help='test')
