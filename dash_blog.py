@@ -367,14 +367,14 @@ def charter():
         line_color='#022B3A',
         hovertemplate="<br>".join([
             "<b>%{x}</b><br>",
-            "Median price per SF: <b>%{y}</b>",
+            "Median price / SF: <b>%{y}</b>",
             "Total sales: <b>%{customdata[0]:,.0f}</b>"
             ])
         )
 
     # update the fig
     fig.update_layout(
-        title_text='<span style="font-size: 16px;">Countywide Median Sales Price / SF</span>', 
+        title_text='<span style="font-size: 16px;">Countywide Median Price / SF</span>', 
         title_x=0, 
         title_y=0.88,
         title_font_color="#FFFFFF",
