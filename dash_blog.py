@@ -406,7 +406,7 @@ def charter():
             dtick = 'M3',
             range=['2021-1','2023-4']
             ),
-        height=390,
+        height=425,
         hovermode="closest")
 
     # add shifting vertical lines
