@@ -371,7 +371,7 @@ def charter():
 
     # update the fig
     fig.update_layout(
-        title_text='<span style="font-size: 18px;">Monthly Change: Median Sales Price / SF</span>', 
+        title_text='<span style="font-size: 18px;">Monthly Median Sales Price / SF</span>', 
         title_x=0, 
         title_y=0.88,
         title_font_color="#022B3A",
