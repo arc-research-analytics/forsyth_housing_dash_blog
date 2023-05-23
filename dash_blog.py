@@ -59,7 +59,7 @@ years = st.sidebar.select_slider(
 
 # dashboard title 
 if years[0] != years[1]:
-    st.markdown(f"<h2 style='color:#FFFFFF; font-weight: 900;'>Forsyth County Housing Trends | <span style='color:#FFFFFF; font-weight: 500'>{years[0]} - {years[1]}</span></h2>", unsafe_allow_html=True)
+    st.markdown(f"<h2 style='color:#FFFFFF; font-weight: 900;'>Forsyth County Housing Trends | <span style='color:#022B3A; font-weight: 500'>{years[0]} - {years[1]}</span></h2>", unsafe_allow_html=True)
 else:
     st.markdown(f"<h2 style='color:#FFFFFF; font-weight: 900;'>Forsyth County Housing Trends | <span style='color:#FFFFFF; font-weight: 500'>{years[0]} only</span></h2>", unsafe_allow_html=True)
 
