@@ -374,14 +374,14 @@ def charter():
 
     # update the fig
     fig.update_layout(
-        title_text='<span style="font-size: 18px;">Countywide Median Sales Price / SF</span>', 
+        title_text='<span style="font-size: 16px;">Countywide Median Sales Price / SF</span>', 
         title_x=0, 
         title_y=0.88,
         title_font_color="#FFFFFF",
         hoverlabel=dict(
             bgcolor="#022B3A",
             bordercolor = "#FFFFFF",
-            font_size=16, # set the font size of the chart tooltip
+            font_size=15, # set the font size of the chart tooltip
             align="left"
             ),
         margin=dict(
