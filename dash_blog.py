@@ -367,7 +367,7 @@ def charter():
         line_color='#022B3A',
         hovertemplate="<br>".join([
             "<b>%{x}</b><br>",
-            "Price per SF: <b>%{y}</b>",
+            "Median price per SF: <b>%{y}</b>",
             "Total sales: <b>%{customdata[0]:,.0f}</b>"
             ])
         )
