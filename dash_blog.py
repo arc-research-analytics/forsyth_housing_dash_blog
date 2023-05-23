@@ -381,7 +381,7 @@ def charter():
         hoverlabel=dict(
             bgcolor="#022B3A",
             bordercolor = "#FFFFFF",
-            font_size=15, # set the font size of the chart tooltip
+            font_size=13, # set the font size of the chart tooltip
             align="left"
             ),
         margin=dict(
