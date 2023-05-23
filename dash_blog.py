@@ -378,6 +378,12 @@ def charter():
         title_x=0, 
         title_y=0.88,
         title_font_color="#FFFFFF",
+        hoverlabel=dict(
+            bgcolor="#022B3A",
+            bordercolor = "#FFFFFF",
+            font_size=16, # set the font size of the chart tooltip
+            align="left"
+            ),
         margin=dict(
             t=85
         ),
@@ -385,7 +391,7 @@ def charter():
             linecolor = "#022B3A",
             title = None,
             tickfont_color = '#022B3A',
-            tickfont_size = 14,
+            tickfont_size = 13,
             tickformat = '$.0f',
             showgrid = False
             ),
@@ -401,7 +407,7 @@ def charter():
             range=['2021-1','2023-4']
             ),
         height=390,
-        hovermode="x unified")
+        hovermode="closest")
 
     # add shifting vertical lines
     year_start = {
