@@ -477,4 +477,5 @@ with col3:
     subcol2.markdown(f"<span style='color:{label_font_color}; font-size:{label_font_size}px; font-weight:{label_font_weight}; '>Median vintage</span><br><span style='color:{value_font_color}; font-size:{value_font_size}px; font-weight:{value_font_weight}; line-height: {line_height}px'>{med_vintage}</span>", unsafe_allow_html=True)
 
 # line chart
+col3.write("")
 col3.plotly_chart(charter(), use_container_width=True, config = {'displayModeBar': False}, help='test')
